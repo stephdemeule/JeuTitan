@@ -2,11 +2,11 @@ package com.example.cards;
 
 import java.util.List;
 
-public class Game {
+public class CardPack {
 
     private List<Card> cards;
 
-    public Game(List<Card> cards) {
+    public CardPack(List<Card> cards) {
 
         this.cards = cards;
     }
