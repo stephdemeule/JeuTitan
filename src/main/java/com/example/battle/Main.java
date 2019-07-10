@@ -10,8 +10,9 @@ public class Main {
 
         System.out.println("----- Bataille -----");
 
-        BattleService battleService = new BattleServiceImpl();
-        CardPackService cardPackService = new CardPackServiceImpl();
+        final BattleService battleService = new BattleServiceImpl();
+        final CardPackService cardPackService = new CardPackServiceImpl();
+
         CardPack cardPack = cardPackService.createClassicPack();
 
         Scanner sc = new Scanner(System.in);
