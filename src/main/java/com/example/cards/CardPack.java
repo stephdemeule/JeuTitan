@@ -1,6 +1,6 @@
 package com.example.cards;
 
-import java.util.List;
+import java.util.*;
 
 public class CardPack {
 
@@ -9,5 +9,14 @@ public class CardPack {
     public CardPack(List<Card> cards) {
 
         this.cards = cards;
+    }
+
+    public Card pickCard() {
+
+        Random r = new Random();
+        int randn = r.nextInt((0 - cards.size()) + 1);
+        Card pickedCard = cards.get(randn);
+        cards.remove(randn);
+        return pickedCard;
     }
 }
