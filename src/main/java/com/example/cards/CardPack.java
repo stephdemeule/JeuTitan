@@ -22,4 +22,12 @@ public class CardPack {
     public void addCard(Card card) {
         cards.add(card);
     }
+
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(List<Card> cards) {
+        this.cards = cards;
+    }
 }
