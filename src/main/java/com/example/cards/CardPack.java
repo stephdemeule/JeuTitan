@@ -6,11 +6,6 @@ public class CardPack {
 
     private List<Card> cards;
 
-    public CardPack(List<Card> cards) {
-
-        this.cards = cards;
-    }
-
     public Card pickCard() {
 
         Random r = new Random();
@@ -18,5 +13,9 @@ public class CardPack {
         Card pickedCard = cards.get(randn);
         cards.remove(randn);
         return pickedCard;
+    }
+
+    public void addCard(Card card) {
+        cards.add(card);
     }
 }
