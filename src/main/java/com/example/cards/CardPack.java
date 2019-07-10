@@ -6,9 +6,8 @@ public class CardPack {
 
     private List<Card> cards;
 
-    public CardPack(List<Card> cards) {
-
-        this.cards = cards;
+    public CardPack() {
+        this.cards = new ArrayList<Card>();
     }
 
     public Card pickCard() {
@@ -18,5 +17,9 @@ public class CardPack {
         Card pickedCard = cards.get(randn);
         cards.remove(randn);
         return pickedCard;
+    }
+
+    public void addCard(Card card) {
+        cards.add(card);
     }
 }
