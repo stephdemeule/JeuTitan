@@ -6,6 +6,10 @@ public class CardPack {
 
     private List<Card> cards;
 
+    public CardPack() {
+        this.cards = new ArrayList<Card>();
+    }
+
     public Card pickCard() {
 
         Random r = new Random();
